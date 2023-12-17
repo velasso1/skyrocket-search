@@ -1,7 +1,38 @@
 .header {
+    display: flex;
+    justify-content: center;
     background-color: #000;
+    font-family: 'Montserrat';
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
 
     &__link {
         color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size .3s;
+        padding: 0 0 5px 0;
+    }
+
+    &__link:hover {
+        background-size: 100% 1px;
+    }
+
+    &__link:nth-child(even) {
+        margin: 0 50px 0 50px;
+    }
+
+    &__link-logo {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 300;
     }
 }
